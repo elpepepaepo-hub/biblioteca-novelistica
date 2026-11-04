@@ -2,7 +2,7 @@
 
 **Edición:** 2026-11-03 · **Estado:** guía de la versión privada 0.5.0 y prototipo visual 0.6.0.
 
-> **Antes de comenzar:** este sitio público de GitHub Pages no instala el complemento, no ejecuta servidores ni contiene los ZIP privados. El acceso a la importación de complementos y a conectores MCP depende de tu cuenta de ChatGPT. La conexión remota y OAuth **no han sido comprobadas de extremo a extremo**. No utilices manuscritos irremplazables en un despliegue experimental.
+> **Antes de comenzar:** este sitio público de GitHub Pages no instala el complemento ni ejecuta servidores, pero **sí ofrece los tres ZIP originales en `downloads/`**. El acceso a la importación de complementos y a conectores MCP depende de tu cuenta de ChatGPT. La conexión remota y OAuth **no han sido comprobadas de extremo a extremo**. No utilices manuscritos irremplazables en un despliegue experimental.
 
 ## Elige tu camino
 
@@ -16,9 +16,9 @@
 
 ## A. Modo sencillo: paso a paso, sin programación
 
-1. **Consigue el ZIP privado del complemento.** Solicítalo al autor o distribuidor autorizado. No lo busques en este repositorio público: no está alojado aquí.
+1. **Descarga el ZIP del complemento** desde [Descargas](../descargas.html): `biblioteca-novelistica-v0.5.0-autogestionada.zip`. Se permite descargarlo y usarlo personalmente; no modificarlo ni redistribuirlo sin permiso escrito (consulta [LICENSE.md](../LICENSE.md)).
 2. **Entra en ChatGPT y comprueba los permisos de tu cuenta.** Busca la opción de complementos y, si existe, la función para instalar/importar un complemento privado. No todos los planes, regiones y espacios de trabajo ofrecen la misma opción. Si no aparece, **detente**: el ZIP no puede forzar esa función. Consulta con el administrador de tu cuenta o utiliza los métodos de distribución permitidos por ChatGPT.
-3. **Instala el ZIP solo si ChatGPT te ofrece un mecanismo compatible.** Sigue las indicaciones que aparezcan en pantalla. No subas el ZIP a un repositorio público para intentar instalarlo.
+3. **Instala el ZIP solo si ChatGPT te ofrece un mecanismo compatible.** Sigue las indicaciones que aparezcan en pantalla. El ZIP ya se distribuye públicamente desde este repositorio, pero subirlo a ChatGPT no garantiza que tu cuenta admita su instalación.
 4. **Abre Biblioteca Novelística y elige «Modo sencillo».** Si el complemento pregunta qué quieres organizar, responde con el título de la novela y una descripción breve del mundo.
 5. **Empieza con una ficha.** Por ejemplo: «Crea una ficha para la protagonista Ana, capitana de la guardia, y marca como canon únicamente lo que yo confirme».
 6. **Registra hechos con procedencia.** Indica capítulo, escena, documento y versión cuando los conozcas. Distingue canon, propuesta, alternativa y contradicción.
@@ -39,7 +39,7 @@ No es posible asegurar que todos los usuarios puedan importar un ZIP privado. Pu
 ### B1. Prepara lo necesario
 
 1. Una computadora con **Python 3.11 o posterior**, terminal y, para despliegue con contenedores, Docker.
-2. El **ZIP privado del backend autogestionado v0.5.0**, proporcionado por el distribuidor autorizado.
+2. El **ZIP del backend autogestionado v0.5.0**, disponible en [Descargas](../descargas.html).
 3. Una cuenta en el alojamiento que elijas: Render, Railway, Fly.io o servidor propio. Revisa sus precios, reglas de almacenamiento y facturación **antes de crear recursos de pago**.
 4. Una cuenta en un proveedor de identidad: Auth0, Amazon Cognito o Keycloak (este último exige administrarlo por tu cuenta).
 5. Tiempo para realizar pruebas con **datos inventados** y un lugar seguro para guardar copias de seguridad.
@@ -130,4 +130,4 @@ No es posible asegurar que todos los usuarios puedan importar un ZIP privado. Pu
 
 ## E. Para desarrolladores y administradores
 
-Consulta [HOJA_DE_RUTA.md](HOJA_DE_RUTA.md) para conocer qué falta antes de considerar operativo el modo persistente. Consulta también `docs/INSTALACION_AUTOGESTIONADA.md`, `docs/MCP_OAUTH.md` y `docs/DEPLOY_REMOTO.md` **dentro del ZIP privado del backend**.
+Consulta [HOJA_DE_RUTA.md](HOJA_DE_RUTA.md) para conocer qué falta antes de considerar operativo el modo persistente. Consulta también `docs/INSTALACION_AUTOGESTIONADA.md`, `docs/MCP_OAUTH.md` y `docs/DEPLOY_REMOTO.md` **dentro del ZIP del backend publicado en `downloads/`**.

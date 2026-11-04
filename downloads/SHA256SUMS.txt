@@ -1,0 +1,3 @@
+5eed1ff6f68579bd6aa9f6935a1904efd83ecebd2fc7b68263ce39f793bb85ab  biblioteca-novelistica-v0.5.0-autogestionada.zip
+8a11af76af85f6eb4085c83a1ff2cc518117773fa12c8ee49922f652baaca610  biblioteca-novelistica-backend-autogestionado-v0.5.0.zip
+d7fd0aa03038f689c9afac5ca3b82b388c90dfe2d158e33ab9efc3b942eb2b31  biblioteca-novelistica-interfaz-visual-v0.6.0.zip

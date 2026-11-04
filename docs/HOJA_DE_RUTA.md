@@ -4,9 +4,9 @@
 
 ## Propósito y alcance
 
-Cada escritor administrará su propio servidor, su base de datos, su proveedor de identidad y sus costes. El complemento tendrá dos modos: **sencillo**, basado en conversación sin persistencia externa, y **persistente**, con un servidor MCP propio y datos guardados en SQLite. La distribución será por ZIP privado; **no** se contempla publicar el complemento en el directorio público.
+Cada escritor administrará su propio servidor, su base de datos, su proveedor de identidad y sus costes. El complemento tendrá dos modos: **sencillo**, basado en conversación sin persistencia externa, y **persistente**, con un servidor MCP propio y datos guardados en SQLite. La distribución será mediante **tres ZIP descargables públicamente desde este repositorio**, sin publicación en el directorio de ChatGPT. La licencia propuesta permite descarga y uso personal, pero no redistribución ni modificación sin permiso.
 
-El sitio GitHub Pages contiene solo información pública. No debe alojar código backend, ZIP privados, secretos, archivos de bases de datos ni manuscritos.
+El repositorio público incluye los tres ZIP originales en `downloads/` (complemento v0.5.0, backend v0.5.0 e interfaz v0.6.0). **Su código es visible para cualquier persona**; no deben alojarse secretos, bases de datos personales ni manuscritos.
 
 ## Estado de partida
 
@@ -23,11 +23,11 @@ El sitio GitHub Pages contiene solo información pública. No debe alojar códig
 
 ## Orden recomendado para terminar el proyecto
 
-### Hito 1 — Congelar y auditar los paquetes privados
+### Hito 1 — Congelar y auditar los paquetes públicos
 
-**Objetivo:** disponer de una base reproducible. **Trabajo:** conservar ZIP del complemento v0.5.0, backend v0.5.0 e interfaz v0.6.0; registrar hashes, dependencias y versiones; revisar que los archivos del backend no se publiquen por accidente.
+**Objetivo:** disponer de una base reproducible. **Trabajo:** conservar ZIP del complemento v0.5.0, backend v0.5.0 e interfaz v0.6.0; registrar hashes, dependencias y versiones; revisar que los paquetes no incluyan secretos, datos personales ni manuscritos, dado que su publicación es intencional.
 
-**Prueba de aceptación:** instalación reproducible desde ZIP en un entorno de pruebas, dependencias identificadas y ninguna credencial en el repositorio.
+**Prueba de aceptación:** instalación reproducible desde ZIP en un entorno de pruebas, dependencias identificadas y ninguna credencial en el repositorio; verificar los tres ZIP descargables.
 
 ### Hito 2 — Integrar MCP con el backend real
 
